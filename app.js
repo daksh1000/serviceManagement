@@ -18,6 +18,10 @@ app.get ("/", function (req, res) {
     res.send("hello everyone")
 })
 
+app.get("/home", function(req,res) {
+    res.send("home called")
+})
+
 admin.post("/", function(req, res) {
     let c  = req.body.a + req.body.b;
     console.log(req.body);
